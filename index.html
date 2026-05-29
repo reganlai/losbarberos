@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Barberos Barbershop | Serving Auburn Since 2019</title>
+    <meta name="description" content="Los Barberos Barbershop — precision fades, clean cuts, and hot towel shaves in Auburn. Book your appointment today.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="header" id="header">
+        <nav class="navbar" id="navbar">
+
+            <!-- Desktop nav links (centered) -->
+            <div class="nav-center">
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#hero"     class="nav-link" id="link-home">Home</a></li>
+                    <li class="nav-item"><a href="#gallery"  class="nav-link" id="link-gallery">Gallery</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link" id="link-services">Services</a></li>
+                    <li class="nav-item"><a href="#booking"  class="nav-link" id="link-booking">Online Booking</a></li>
+                    <li class="nav-item"><a href="#location" class="nav-link" id="link-location">Location</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile hamburger (centered on phone) -->
+            <button class="hamburger" id="hamburger-toggle"
+                aria-label="Toggle Navigation Menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu-overlay">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile full-screen overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+            <ul class="mobile-nav-menu">
+                <li><a href="#hero"     class="mobile-nav-link" id="mobile-link-home">Home</a></li>
+                <li><a href="#gallery"  class="mobile-nav-link" id="mobile-link-gallery">Gallery</a></li>
+                <li><a href="#services" class="mobile-nav-link" id="mobile-link-services">Services</a></li>
+                <li><a href="#booking"  class="mobile-nav-link" id="mobile-link-booking">Online Booking</a></li>
+                <li><a href="#location" class="mobile-nav-link" id="mobile-link-location">Location</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <!-- HERO -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Los Barberos Barbershop</h1>
+                <p class="hero-subtitle">Serving Auburn Since 2019</p>
+                <a href="#booking" class="hero-btn">Book Now</a>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery" class="section gallery-section">
+            <div class="section-inner">
+                <div class="section-label">Our Work</div>
+                <h2 class="section-title">The Cut Speaks<br>For Itself</h2>
+                <p class="section-desc">Every client leaves sharper than they came. Browse a selection of our work.</p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item gallery-item--large" id="gallery-1">
+                        <div class="gallery-placeholder">
+                            <span class="gallery-placeholder-icon">✂</span>
+                            <span class="gallery-placeholder-text">Fade Cut</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span>Fade Cut</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" id="gallery-2">
+                        <div class="gallery-placeholder">
+                            <span class="gallery-placeholder-icon">✂</span>
+                            <span class="gallery-placeholder-text">Skin Fade</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span>Skin Fade</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" id="gallery-3">
+                        <div class="gallery-placeholder">
+                            <span class="gallery-placeholder-icon">✂</span>
+                            <span class="gallery-placeholder-text">Hot Towel Shave</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span>Hot Towel Shave</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" id="gallery-4">
+                        <div class="gallery-placeholder">
+                            <span class="gallery-placeholder-icon">✂</span>
+                            <span class="gallery-placeholder-text">Taper Fade</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span>Taper Fade</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item gallery-item--large" id="gallery-5">
+                        <div class="gallery-placeholder">
+                            <span class="gallery-placeholder-icon">✂</span>
+                            <span class="gallery-placeholder-text">Classic Style</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span>Classic Style</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" id="gallery-6">
+                        <div class="gallery-placeholder">
+                            <span class="gallery-placeholder-icon">✂</span>
+                            <span class="gallery-placeholder-text">Beard Trim</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span>Beard Trim</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section services-section">
+            <div class="section-inner services-inner">
+                <div class="section-label">What We Offer</div>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-desc">Straightforward pricing. Uncompromising quality.</p>
+
+                <ul class="services-list">
+                    <li class="service-row" id="service-haircut">
+                        <span class="service-name">Haircut</span>
+                        <span class="service-divider"></span>
+                        <span class="service-price">$40</span>
+                    </li>
+                    <li class="service-row" id="service-fade">
+                        <span class="service-name">Skin Fade</span>
+                        <span class="service-divider"></span>
+                        <span class="service-price">$30</span>
+                    </li>
+                    <li class="service-row" id="service-beard">
+                        <span class="service-name">Beard Trim</span>
+                        <span class="service-divider"></span>
+                        <span class="service-price">$15</span>
+                    </li>
+                    <li class="service-row" id="service-shave">
+                        <span class="service-name">Hot Towel Shave</span>
+                        <span class="service-divider"></span>
+                        <span class="service-price">$35</span>
+                    </li>
+                    <li class="service-row" id="service-combo">
+                        <span class="service-name">Cut + Beard Combo</span>
+                        <span class="service-divider"></span>
+                        <span class="service-price">$50</span>
+                    </li>
+                    <li class="service-row" id="service-kids">
+                        <span class="service-name">Kids Cut</span>
+                        <span class="service-divider"></span>
+                        <span class="service-price">$25</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ONLINE BOOKING -->
+        <section id="booking" class="section booking-section">
+            <div class="section-inner booking-inner">
+                <div class="booking-text">
+                    <div class="section-label">Reserve Your Seat</div>
+                    <h2 class="section-title">Book Online</h2>
+                    <p class="section-desc">Skip the wait. Book your appointment online and walk in ready.</p>
+                    <ul class="booking-perks">
+                        <li>Choose your barber</li>
+                        <li>Pick your time slot</li>
+                        <li>Instant confirmation</li>
+                    </ul>
+                    <a href="https://booksy.com" target="_blank" rel="noopener noreferrer" class="cta-btn" id="book-btn-main">Book Your Appointment</a>
+                </div>
+                <div class="booking-visual">
+                    <div class="booking-card" id="booking-card">
+                        <div class="booking-card-header">
+                            <span class="booking-card-title">Los Barberos</span>
+                            <span class="booking-card-tag">Available</span>
+                        </div>
+                        <div class="booking-card-body">
+                            <div class="booking-time-row">
+                                <span class="booking-time active-slot">10:00 AM</span>
+                                <span class="booking-time">10:30 AM</span>
+                                <span class="booking-time">11:00 AM</span>
+                                <span class="booking-time">11:30 AM</span>
+                            </div>
+                            <div class="booking-time-row">
+                                <span class="booking-time">12:00 PM</span>
+                                <span class="booking-time">12:30 PM</span>
+                                <span class="booking-time">1:00 PM</span>
+                                <span class="booking-time">1:30 PM</span>
+                            </div>
+                            <div class="booking-time-row">
+                                <span class="booking-time">2:00 PM</span>
+                                <span class="booking-time">2:30 PM</span>
+                                <span class="booking-time">3:00 PM</span>
+                                <span class="booking-time">3:30 PM</span>
+                            </div>
+                            <div class="booking-time-row">
+                                <span class="booking-time">4:00 PM</span>
+                                <span class="booking-time">4:30 PM</span>
+                                <span class="booking-time">5:00 PM</span>
+                                <span class="booking-time">5:30 PM</span>
+                            </div>
+                            <div class="booking-time-row">
+                                <span class="booking-time">6:00 PM</span>
+                                <span class="booking-time">6:30 PM</span>
+                            </div>
+                        </div>
+                        <div class="booking-card-footer">
+                            <span>Select a time to confirm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATION -->
+        <section id="location" class="section location-section">
+            <div class="section-inner">
+                <div class="section-label">Find Us</div>
+                <h2 class="section-title">Our Location</h2>
+                <p class="section-desc">Conveniently located in Auburn. Walk-ins welcome.</p>
+
+                <div class="location-details">
+                    <div class="location-detail-row" id="location-address">
+                        <span class="location-detail-icon">◎</span>
+                        <div>
+                            <strong>Address</strong>
+                            <span>514 E Main St, Auburn, WA 98002</span>
+                        </div>
+                    </div>
+                    <div class="location-detail-row" id="location-hours">
+                        <span class="location-detail-icon">◷</span>
+                        <div>
+                            <strong>Hours</strong>
+                            <span>Sunday – Monday: 10 AM – 7 PM</span>
+                        </div>
+                    </div>
+                    <div class="location-detail-row" id="location-phone">
+                        <span class="location-detail-icon">◈</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <span>(253) 249-4148</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="footer-inner">
+            <p class="footer-brand">Los Barberos Barbershop</p>
+            <p class="footer-copy">&copy; 2024 Los Barberos. All rights reserved. &mdash; Serving Auburn Since 2019</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
