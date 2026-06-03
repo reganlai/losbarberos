@@ -911,6 +911,7 @@ body.menu-open {
     .cta-btn {
         width: 100%;
         text-align: center;
+        font-size: 0.7rem;
     }
 
     .booking-time {
