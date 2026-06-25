@@ -53,32 +53,3 @@ timeSlots.forEach(slot => {
     });
 });
 
-/* ============================================================
-   SCROLL REVEAL — fade in sections on scroll
-   ============================================================ */
-const revealTargets = document.querySelectorAll(
-    '.section-label, .section-title, .section-desc, .gallery-item, .service-card, .booking-card, .location-detail-row, .location-map, .cta-btn'
-);
-
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-            revealObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.12 });
-
-revealTargets.forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = `opacity 0.6s ease ${i * 0.04}s, transform 0.6s ease ${i * 0.04}s`;
-    revealObserver.observe(el);
-});
-
-/* Revealed state — set by IntersectionObserver */
-document.addEventListener('DOMContentLoaded', () => {
-    const style = document.createElement('style');
-    style.textContent = `.revealed { opacity: 1 !important; transform: translateY(0) !important; }`;
-    document.head.appendChild(style);
-});
