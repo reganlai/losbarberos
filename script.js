@@ -44,12 +44,22 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 /* ============================================================
-   BOOKING TIME SLOT — click to select
+   GALLERY CAROUSEL
    ============================================================ */
-timeSlots.forEach(slot => {
-    slot.addEventListener('click', () => {
-        timeSlots.forEach(s => s.classList.remove('active-slot'));
-        slot.classList.add('active-slot');
-    });
-});
+const galleryTrack = document.getElementById('gallery-track');
+const galleryPrev  = document.getElementById('gallery-prev');
+const galleryNext  = document.getElementById('gallery-next');
+const galleryDots  = document.querySelectorAll('.carousel-dot');
+const slideCount   = document.querySelectorAll('.carousel-slide').length;
+let galleryIndex   = 0;
+
+function goToSlide(n) {
+    galleryIndex = (n + slideCount) % slideCount;
+    galleryTrack.style.transform = `translateX(-${galleryIndex * 100}%)`;
+    galleryDots.forEach((d, i) => d.classList.toggle('active', i === galleryIndex));
+}
+
+galleryPrev.addEventListener('click', () => goToSlide(galleryIndex - 1));
+galleryNext.addEventListener('click', () => goToSlide(galleryIndex + 1));
+galleryDots.forEach(dot => dot.addEventListener('click', () => goToSlide(+dot.dataset.index)));
 

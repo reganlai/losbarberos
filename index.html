@@ -66,59 +66,31 @@
                 <h2 class="section-title">Our Work</h2>
                 <!-- <p class="section-desc">Every client leaves sharper than they came.</p> -->
 
-                <div class="gallery-grid">
-                    <div class="gallery-item gallery-item--large" id="gallery-1">
-                        <img src="haircut2.jpg" alt="Fade Cut">
-                        <div class="gallery-overlay">
-                            <span>Fade Cut</span>
+                <div class="gallery-carousel">
+                    <div class="carousel-window">
+                        <div class="carousel-track" id="gallery-track">
+                            <div class="carousel-slide">
+                                <img src="haircut2.jpg" alt="Fade Cut">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="haircut1.jpg" alt="Hot Towel Shave">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="haircut3.jpg" alt="Taper Fade">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="haircut4.jpg" alt="Classic Style">
+                            </div>
                         </div>
                     </div>
-                    <div class="gallery-item" id="gallery-2">
-                        <!-- <img src="haircut2.jpg" alt="Skin Fade"> -->
-                        <div class="gallery-placeholder">
-                            <span class="gallery-placeholder-icon">✂</span>
-                            <!-- <span class="gallery-placeholder-text">Skin Fade</span> -->
-                        </div>
-                        <div class="gallery-overlay">
-                            <span>Hot Towel Shave</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" id="gallery-3">
-                        <div class="gallery-placeholder">
-                            <span class="gallery-placeholder-icon">✂</span>
-                            <!-- <span class="gallery-placeholder-text">Hot Towel Shave</span> -->
-                        </div>
-                        <div class="gallery-overlay">
-                            <span>Hot Towel Shave</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" id="gallery-4">
-                        <div class="gallery-placeholder">
-                            <span class="gallery-placeholder-icon">✂</span>
-                            <!-- <span class="gallery-placeholder-text">Taper Fade</span> -->
-                        </div>
-                        <div class="gallery-overlay">
-                            <span>Taper Fade</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item gallery-item--large" id="gallery-5">
-                        <div class="gallery-placeholder">
-                            <span class="gallery-placeholder-icon">✂</span>
-                            <!-- <span class="gallery-placeholder-text">Classic Style</span> -->
-                        </div>
-                        <div class="gallery-overlay">
-                            <span>Classic Style</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" id="gallery-6">
-                        <div class="gallery-placeholder">
-                            <span class="gallery-placeholder-icon">✂</span>
-                            <!-- <span class="gallery-placeholder-text">Beard Trim</span> -->
-                        </div>
-                        <div class="gallery-overlay">
-                            <span>Beard Trim</span>
-                        </div>
-                    </div>
+                    <button class="gallery-arrow gallery-arrow--prev" id="gallery-prev" aria-label="Previous image">&#8249;</button>
+                    <button class="gallery-arrow gallery-arrow--next" id="gallery-next" aria-label="Next image">&#8250;</button>
+                </div>
+                <div class="carousel-dots" id="gallery-dots">
+                    <button class="carousel-dot active" data-index="0"></button>
+                    <button class="carousel-dot" data-index="1"></button>
+                    <button class="carousel-dot" data-index="2"></button>
+                    <button class="carousel-dot" data-index="3"></button>
                 </div>
             </div>
         </section>
